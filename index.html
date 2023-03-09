@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script async type="text/javascript" src="script/background.js"></script>
+    <link rel="icon" href="resources/logo (1).png" type="image/icon type">
+</head>
+
+<body>
+    <canvas id="background"></canvas>
+
+    <section id="home" class="active">
+
+        <div class="container-name">
+            <h1 id="name">Self Care</h1>
+            <hr id="hr-name">
+            <h4 id="name-des">Self care is the status of providing and maintaining psychological,
+                psychiatric, and emotional health by means of diagnosis, treatment, and prevention of mental illnesses.
+            </h4>
+        </div>
+
+        <div class="container1">
+            <input id="SearchBox" type="text" placeholder="Search here">
+            <img src="resources/search_white_24dp.svg" id="SearchBtn" alt="">
+        </div><br><br><br>
+
+
+        <div class="container">
+            <span id="row1-container">
+                <h1 id="row1-heading">Self care coaching</h1>
+                <p id="row1-p">Mental Health Coaching is an evidence-based treatment focused on strengths-based support
+                    for adults living with mental and behavioral health difficulties.<br>
+                    Coaching is action oriented with an emphasis on improving one's present life and reaching goals for
+                    the future by addressing distressing thoughts and emotions.</p>
+            </span>
+
+            <span><img src="resources/h1.jpg" id="home1" alt=""></span>
+
+            <span><img src="resources/h2.jpg" id="home2" alt=""></span>
+
+            <span id="row2-container">
+                <h1 id="row2-heading">You Deserve To Be Happy</h1>
+                <p id="row2-p">Happiness is at the core of our experiences. It is as incomprehensible to deny ourselves
+                    the feeling as it is to deny ourselves the experience of eating or sleeping or breathing. We are
+                    human beings and happiness is a vital part of our survival.</p>
+
+            </span>
+
+        </div><br><br>
+        <div class="details-container">
+
+
+            <details>
+                <summary id="authors">About us</summary>
+                <ul>
+                    <li>
+                        <img src="resources/amaan.JPG" alt="" id="authorimg">
+                        <span>
+                            <h3 id="authorname">Mohammad Amaan</h3>
+                            <p>Frontend Developer <br>Persuing B.Tech in Computer Science at MIT<br>
+                            </p>
+                                <!-- <button id="linkdinbtn">
+                                    <img src="resources/linkdin.svg" alt="" id="linkdin">
+                                </button> -->
+                        </span>
+                    </li>
+                    <li>
+                        <img src="resources/zaid.jpg" alt="" id="authorimg">
+                        <span>
+                            <h3 id="authorname">Mohd Zaid Amaan</h3>
+                            <p>Frontend Developer<br>Persuing B.Tech in Computer Science at MIT</p>
+                                <!-- <button id="linkdinbtn">
+                                    <img src="resources/linkdin.svg" alt="" id="linkdin">
+                                </button> -->
+                        </span>
+                    </li>
+                    <li>
+                        <img src="resources/ibaad.JPG" alt="" id="authorimg">
+                        <span>
+                            <h3 id="authorname">Ibad Ur Razzaq</h3>
+                            <p>Behaviour Psychologist<br>Persuing B.Tech in Computer Science at MIT</p>
+                                <!-- <button id="linkdinbtn">
+                                    <img src="resources/linkdin.svg" alt="" id="linkdin">
+                                </button> -->
+                        </span>
+                    </li>
+                </ul>
+            </details>
+            <br>
+            <details id="feedback">
+                <summary>Feedback form</summary>
+                <input type="text"placeholder="Enter name" id="inputname">
+                <input type="email" id="inputemail" placeholder="abc@gmail.com">
+                <textarea name="text" id="inputtext" placeholder="Enter your comment..." cols="80" rows="10"></textarea>
+                <button id="insbtn">Submit</button>
+            </details>
+
+        </div><br><br>
+
+
+
+
+        <footer id="foot">
+            <p id="f">Powered by Self Care</p>
+        </footer>
+
+
+    </section>
+
+    <section id="search">
+        <button id="back">
+            <img src="resources/back.svg" id="backbtn">
+        </button>
+        <div class="container-name">
+            <h1 id="name">Self Care</h1>
+            <hr id="hr-name">
+            <h4 id="name-des">Self care is the status of providing and maintaining psychological,
+                psychiatric, and emotional health by means of diagnosis, treatment, and prevention of mental illnesses.
+            </h4>
+        </div>
+
+
+        <div class="container2">
+            <h3>Similiar quaries :</h3><br>
+
+
+            <details>
+                <summary id="rq1"></summary><br>
+                <p id="rqs1"></p><br>
+            </details>
+
+            <details>
+                <summary id="rq2"></summary><br>
+                <p id="rqs2"></p><br>
+            </details>
+
+            <details>
+                <summary id="rq3"></summary><br>
+                <p id="rqs3"></p><br>
+            </details><br><br>
+
+
+
+            <hr><br>
+
+
+            <h3>Symptoms :</h3><br>
+
+
+            <p id="s1"></p><br>
+
+
+            <p id="s2"></p><br>
+
+
+
+            <p id="s3"></p><br>
+
+
+        </div><br><br>
+
+        <div class="container3">
+            <h3>Solutions :</h3><br>
+
+            <p id="Tips1"></p><br>
+
+            <p id="Tips2"></p><br>
+        </div><br><br>
+
+        <div class="container4">
+            <a target="_blank" href="#" id="btn1">Reference video 1</a>
+            <a target="_blank" href="#" id="btn2">Reference video 2</a>
+            <a target="_blank" href="#" id="btn3">Reference video 3</a>
+
+        </div><br><br>
+
+        <footer id="foot">
+            <p id="f">Powered by Self Care</p>
+        </footer>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

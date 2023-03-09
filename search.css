@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@300&family=Nunito+Sans&family=Poppins:wght@300&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito+Sans&family=Poppins:wght@300&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#search {
+    display: none;
+}
+
+#search.active {
+    display: block;
+}
+
+body, html {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container-name{
+    width: 70vw;
+    justify-content: center;
+    margin: 0 auto;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#name{
+    justify-content: center;
+    text-align: center;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    line-height: 2rem;
+    margin: 0 auto;
+}
+
+#hr-name{
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    border: 1px solid  white;
+    background: white;
+    margin: 0 auto;
+}
+#name-des{
+    text-align: justify;
+    justify-content: center;
+    color: white;
+    width: 60vw;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#SearchBox {
+    margin-right: 0.6rem;
+    width: 40vw;
+    min-height: 8vh;
+    border: none;
+    border-radius: 3rem;
+    text-align: center;
+    cursor: text;
+    color: white;
+    background: rgba(231, 231, 231, 0.5);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Mukta', sans-serif;
+    font-size: large;
+    letter-spacing: 0.1rem; 
+}
+
+#SearchBox:focus-visible {
+    outline: none;
+    border: none;
+    outline-offset: none;
+}
+
+#SearchBox::placeholder {
+    justify-content: baseline;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    opacity: 70%;
+    letter-spacing: 0.3rem;
+}
+
+#SearchBtn {
+    min-width: 3rem;
+    min-height: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(73, 146, 255, 1);
+cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.container2 {
+    background: rgba(231, 231, 231, 0.5);
+
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.container3 {
+ background: rgba(231, 231, 231, 0.5);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.container4 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ background: rgba(231, 231, 231, 0.5);
+
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+a {
+    text-align: center;
+     max-width: 6rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(73, 146, 255, 1);
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+h3 {
+    justify-content: center;
+    text-align: justify;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+    font-size: large;
+}
+
+summary {
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+    color: black;
+}
+
+p {
+font-family: sans-serif;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+}
+
+footer {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(231, 231, 231, 0.5);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+#f {
+    text-align: center;
+    justify-content: center;
+}
+
+summary {
+    font-weight: bold;
+}
+
+hr {
+    background: black;
+    border: 1px solid black;
+
+}
+
+details >  p{
+    padding-inline: 2rem;
+}
+
+p{
+    padding-inline: 2rem;
+}
+
+details >  p > ul{
+    padding-inline: 1rem;
+}
+
+@media only screen and (max-width: 486px) {
+    .container4 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    #SearchBox::placeholder {
+        letter-spacing: 0rem;
+    }
+  }
